@@ -14,347 +14,52 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
         <link rel="stylesheet" href="./assets/css/style.css" media="all">
+        <link rel="stylesheet" href="./assets/css/responsive.css" media="all">
     </head>
     <body>
         <header>
-            <div class="container">
-                <div class="navbar flex flex-between">
-                    <div class="logo flex gap-10">
-                        <a href="./index.html">Fabian</a>
+            <div class="navbar navbar-default navbar-fixed-top menu-top">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html" class="navbar-brand"><p>Fabian</p></a>
+                        <div class="mobile-nav"></div>
                     </div>
-                    <nav>
-                        <ul class="flex">
+                    <div id="navbar" class="main_menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#home">Home</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#skills">Skills</a></li>
                             <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#resume">Resume</a></li>
-                            <li><a href="https://greencode.deno.dev/blog" target="_blank">Blog</a></li>
+                            <li><a href="#resume">Resume</a></li>	
+                            <li><a href="#blog">Blog</a></li>													
                             <li><a href="#contact">Contact</a></li>
-                            <img src="./assets/img/hamburger-menu.png">
                         </ul>
-                    </nav>
+                    </div> 
                 </div>
-                <div class="hero-banner">
-                    <h3>Greetings!</h3>
-                    <h1><div class="typing" id="who-is">I am Fabian Mendoza</div></h1>
-                    <h2><div class="typing" id="what-do">Fullstack Developer</div></h2>
-                    <p>
-                        I am a software developer with extensive experience, specializing in
-                        designing and creating web, desktop applications, and more...
-                    </p>
-                    <div class="hero-banner-buttons">
-                        <a href="#portfolio" class="primary">My Portfolio</a>
-                        <a href="#contact" class="secundary">Contact Me</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <main>
-            <section id="about" class="section_padding">
-                <div class="container">
-					<div class="single_about">
-						<div class="row">
-							<div class="column">
-								<div class="about_image">
-									<img src="./assets/img/about.jpg" alt="about-image" />
-								</div>
+            </div> 
+			<section id="home" class="main_banner banner_bg">				
+				<div class="container">
+					<div>
+						<div>
+							<div class="banner_content">
+								<h3>Hello!</h3>
+								<h1>
+									<span>I am</span>
+									<span>
+										<b>Fabian Mendoza</b>
+										<b>Backend Developer</b>
+										<b>Frontend Developer</b>
+										<b>FullStack Developer</b>
+									</span>
+								</h1>
+								<p>I am a software developer ...</p>
+								<a href="#portfolio" class="banner_btn">Portfolio</a>
+								<a href="#contact" class="banner_btn">Contact Me</a>								
 							</div>
-
-							<div class="column">
-                                <h4>I am a Modern <span>Software Developer</span></h4>
-                                <p>
-                                    With over 10 years of experience, I have worked on various web and desktop applications,
-                                    RESTful APIs, and microservices. My expertise includes .NET, C#, VB, SQL Server, JavaScript, and Node.js.
-                                </p>
-                                <div class="about_details">
-                                    <p><i class="fa-solid fa-hand"></i> Fabian Mendoza</p>
-                                    <p><i class="fa-solid fa-location-dot"></i> Winnipeg, Canada<p>
-                                    <p><i class="fa-solid fa-phone"></i> +1 (204) 881-5673</p>
-                                    <p><i class="fa-solid fa-envelope"></i> fabianmendozaospina@outlook.com</p>
-                                </div>
-
-                                <a href="#" class="main_btn">Download CV</a>
-							</div>
-						</div>
-					</div>
-                </div>
-            </section>
-
-			<section id="skills" class="gray_bg section_padding">
-				<div class="container">
-                    <div class="section_heading">
-                        <h2>My <span>Skills</span></h2>
-                        <div class="sm_border"></div>
-                    </div>
-
-					<div class="row skills">
-                        <div class="single-skill">
-                            <i class="fa-solid fa-infinity"></i>
-                            <h4>.NET</h4>
-                            <P>
-                                Development of applications using ASP.NET, C#, Web Forms, Windows Forms, and MVC architectures.
-                            </P>
-                        </div>
-                        <div class="single-skill">
-                            <i class="fa-solid fa-database"></i>
-                            <h4>SQL Server</h4>
-                            <P>
-                                Database development and report generation, ensuring efficient data management and analysis.
-                            </P>
-                        </div>
-                        <div class="single-skill">
-                            <i class="fa-brands fa-node-js"></i>
-                            <h4>Node.js</h4>
-                            <P>
-                                Development of scalable microservices with high performance focusing on efficiency and reliability.
-                            </P>
-                        </div>
-                    </div>
-                    <div class="row skills">
-                        <div class="single-skill">
-                            <i class="fa-brands fa-js"></i>
-                            <h4>JavaScript</h4>
-                            <P>
-                                User input validation, integration with external APIs, and leveraging of modern libraries to enhance functionality
-                            </P>
-                        </div>
-                        <div class="single-skill">
-                            <i class="fa fa-code fa-lg"></i>
-                            <h4>Clean Code</h4>
-                            <P>
-                                Incorporation of best practices for maintenance, readability and efficiency in software development.
-                            </P>
-                        </div>
-                        <div class="single-skill">
-                            <i class="fa-solid fa-flask-vial"></i>
-                            <h4>Testing</h4>
-                            <P>
-                                Ensure code quality and reliability through systematic validation of individual components.
-                            </P>
-                        </div>
-					</div>
-				</div>
-			</section>
-
-			<section class="cta_section section_padding">
-				<div class="container">
-					<div class="row">
-                        <div class="cta_content">
-                            <h3>I am Open to Work!</h3>
-                            <a href="https://www.linkedin.com/in/fabianmendozaospina" class="main_btn" target="_blank"><span>Go to My LinkedIn</span></a>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="portfolio" class="section_padding">
-				<div class="container">
-                    <div class="section_heading">
-                        <h2>My <span>Portfolio</span></h2>
-                        <div class="sm_border"></div>
-                    </div>
-
-                    <div class="row work_filter">
-                        <ul>
-                            <li class="active" data-filter="*">All</li>
-                            <li data-filter=".Web">Web</li>
-                            <li data-filter=".Desktop">Desktop</li>
-                            <li data-filter=".Microservices">Microservices</li>
-                            <li data-filter=".Design">Design</li>
-                        </ul>
-                    </div>
-                    <div class="row work_content_area">
-                        <div class="item-img">
-                            <img src="./assets/img/portfolio/1.jpg" alt="portfolio 1" />
-                            <div class="item-img-overlay">
-                                <div class="overlay-info">
-                                    <a href="./assets/img/portfolio/1.jpg" data-lightbox="images">
-                                        <span class="icon"><i class="fa fa-plus"></i></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-img">
-                            <img src="./assets/img/portfolio/2.jpg" alt="portfolio 2" />
-                            <div class="item-img-overlay">
-                                <div class="overlay-info">
-                                    <a href="./assets/img/portfolio/2.jpg" data-lightbox="images">
-                                        <span class="icon"><i class="fa fa-plus"></i></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-img">
-                            <img src="./assets/img/portfolio/3.jpg" alt="portfolio 3" />
-                            <div class="item-img-overlay">
-                                <div class="overlay-info">
-                                    <a href="./assets/img/portfolio/3.jpg" data-lightbox="images">
-                                        <span class="icon"><i class="fa fa-plus"></i></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row work_content_area">
-                        <div class="item-img">
-                            <img src="./assets/img/portfolio/4.jpg" alt="portfolio 4" />
-                            <div class="item-img-overlay">
-                                <div class="overlay-info">
-                                    <a href="./assets/img/portfolio/4.jpg" data-lightbox="images">
-                                        <span class="icon"><i class="fa fa-plus"></i></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-img">
-                            <img src="./assets/img/portfolio/5.jpg" alt="portfolio 5" />
-                            <div class="item-img-overlay">
-                                <div class="overlay-info">
-                                    <a href="./assets/img/portfolio/5.jpg" data-lightbox="images">
-                                        <span class="icon"><i class="fa fa-plus"></i></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-img">
-                            <img src="./assets/img/portfolio/6.jpg" alt="portfolio 6" />
-                            <div class="item-img-overlay">
-                                <div class="overlay-info">
-                                    <a href="./assets/img/portfolio/6.jpg" data-lightbox="images">
-                                        <span class="icon"><i class="fa fa-plus"></i></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-				</div>
-			</section>
-
-			<section class="cta2_section section_padding">
-				<div class="container">
-					<div class="row">
-                        <div class="cta2_content">
-                            <h3>Allways Ready For New Challenges!</h3>
-                            <a href="#portfolio" class="main_btn" target="_blank"><span>Hire Me</span></a>
 						</div>
 					</div>
 				</div>
 			</section>            
-
-			<section id="resume" class="gray_bg section_padding">
-				<div class="container">
-					<div class="section_heading">
-						<h2>My <span>Resume</span></h2>						
-						<div class="sm_border"></div>
-					</div>	
-					<div class="row">
-						<div class="education-container">
-							<ul class="edu-list">
-								<li>										
-									<h5>Software Development</h5>
-									<strong>2024 - 2025</strong>
-									<p>
-                                        Teaches the process of designing, coding, and maintaining software applications. It involved creating efficient and user-friendly programs.
-                                    </p>
-								</li>
-								<li>										
-									<h5>Specialization in Project Management</h5>
-									<strong>2012 - 2013</strong>
-									<p>
-                                        Focused on planning, executing, and overseeing projects to achieve specific goals. It included managing resources and timelines effectively.
-                                    </p>
-								</li>
-								<li>										
-									<h5>Systems Engineering</h5>
-									<strong>1994 - 1998</strong>
-									<p>
-                                        Taught design, integration and management of complex systems throughout their life cycles. It required a deep understanding of both hardware and software components.
-                                    </p>
-								</li>
-							</ul>
-						</div>
-					
-						<div class="education-container">
-							<ul class="edu-list experience">
-								<li>										
-									<h5>Novelus</h5>
-									<strong>2024 - 2024</strong>
-									<p>
-                                        I developed and maintained the software, which in turn provides project management 
-                                        services to AT&T, reducing issues by 20%.
-                                    </p>
-								</li>
-								<li>									
-									<h5>Asesoftware</h5>
-									<strong>2023 - 2024</strong>
-									<p>
-                                        Reduced the technical debt of LATAM chatbots (Chile, Colombia and Mexico) by 20%, 
-                                        improving the architecture, and refactoring with good practices development.
-                                    </p>
-								</li>
-								<li>										
-									<h5>Tuya</h5>
-									<strong>2021 - 2022</strong>
-									<p>
-                                        Reduced by 90% the technical debt of the Digital Sales APIs by correcting 
-                                        incidents reported by Kiuwan and Sonar, and refactoring a robust API into different microservices.
-                                    </p>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="contact" class="section_padding">
-				<div class="container">
-                    <div class="section_heading">
-                        <h2>Contact <span>Me</span></h2>
-                        <div class="sm_border"></div>
-                    </div>
-
-					<div class="contact-me">
-                        <form class="form" name="enq">
-                            <div class="flex row">
-                                <div class="form-group">
-                                    <input type="text" name="name" class="form-control" placeholder="Name" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="Email" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group">
-                                    <textarea rows="6" name="message" class="form-control" placeholder="Your Message" required="required"></textarea>
-                                </div>
-                            </div>
-                            <button type="submit" value="Send message" name="submit" id="submitButton" class="main_btn" title="Submit Your Message!">Send Message</button>
-                        </form>
-					</div>
-				</div>
-			</section>
-        </main>
-
-        <footer>
-            <div class="container flex">
-                <div class="social-media">
-                    <div class="icon-social">
-                        <a href="https://www.linkedin.com/in/fabianmendozaospina/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>       
-                    <div class="icon-social">
-                        <a href="https://x.com/?lang=en" target="_blank" title="X"><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>                     
-                    <div class="icon-social">
-                        <a href="https://www.instagram.com/" target="_blank" title="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
-                    </div>                                                   
-                </div>
-                <div class="copy-right">
-                    <p>CopyRight &copy; 2024 Fabian | All Rights Reserved</p>
-                </div>
-            </div>
-        </footer>              
+        </header>                   
     </body>
 </html>
