@@ -12,7 +12,7 @@ This website is a testament to modern web development techniques, seamlessly ble
 - Hero Banner: Captivating visuals that draw users in and set the tone for engaging interactions.
 - Responsive Design: Achieved through innovative layout techniques:
     - Flexbox: A powerful one-dimensional layout system that effortlessly aligns items in either rows or columns.
-    - Media Queries: <span style="color: red;">This functionality is under construction</span> 🚧. Soon, adaptive CSS rules that transform the design based on device specifications will be incorporated, providing an optimal viewing experience across all screen sizes.
+    - Media Queries: This website includes adaptive CSS rules that transform the design based on device specifications will be incorporated, providing an optimal viewing experience across all screen sizes.
 
 ## Get Started
 
