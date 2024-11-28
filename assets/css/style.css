@@ -557,6 +557,15 @@ nav ul li a:hover {
 .item-img {
     width: 200px;
     height: 150px;   
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.item-img.hidden {
+    opacity: 0;
+    transform: translateY(-20px); 
+    pointer-events: none;
 }
 
 .work_content_area {
@@ -572,11 +581,11 @@ nav ul li a:hover {
     justify-content: space-between;
   }
   
-  #portfolio .item-img {
+#portfolio .item-img {
     flex-basis: 30%; 
     box-sizing: border-box;
     margin-bottom: 100px;
-  }
+ }
   
 /*--------------------------------------*/
 /*             Resume Section           */
@@ -675,11 +684,11 @@ nav ul li a:hover {
     flex-wrap: wrap;
   }
   
-  #resume .education-container {
+#resume .education-container {
     flex-basis: 48%; /* Cada bloque ocupa el 48% del ancho */
     box-sizing: border-box;
     padding: 10px;
-  }
+}
   
 /*--------------------------------------*/
 /*            Contact Section           */
@@ -691,38 +700,6 @@ nav ul li a:hover {
     align-items: center; 
     justify-content: center; 
     text-align: center;         
-}
-
-.form .form-group input{
-	background: transparent;
-	border: 1px solid #dadbdc;
-    height: 40px;
-    border-radius: 0;
-	box-shadow: none;
-    padding: 5px 10px;
-}
-
-.form .form-group input:focus{
-	border: 1px solid #dadbdc;
-}
-
-.form .form-group textarea{
-	background: transparent;
-	border: 1px solid var(--app-primary-color);
-	margin-top: 10px;
-	padding: 5px 10px;
-    border-radius: 0;
-	box-shadow: none;
-    width: 670px;
-}
-
-.form .form-group textarea:focus{
-	border: 1px solid var(--app-primary-color);
-}
-
-.form button {
-    margin-top: 20px;
-    height: 40px;
 }
 
 /*--------------------------------------*/
