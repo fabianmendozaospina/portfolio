@@ -84,17 +84,14 @@ header {
 }
 
 nav {
+    position: relative;
+
     ul {
         list-style: none;
 
         li {
             line-height: var(--app-navbar-height);
         }
-    }
-
-    img {
-        display: none;
-        cursor: pointer;
     }
 }
 
@@ -113,6 +110,16 @@ nav ul li a:hover {
     border-radius: var(--app-border-radius);
 }
 
+.menu-items {
+    display: flex;
+    gap: 20px;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    z-index: 100;    
+}
 
 /*--------------------------------------*/
 /*              Hero Banner             */
