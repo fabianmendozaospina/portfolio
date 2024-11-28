@@ -377,11 +377,6 @@ nav ul li a:hover {
     text-align: center;   
 }
 
-.single-skill:hover{
-	-webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-}
-
 .single-skill i{
 	background: #F95353;
     margin-top: 4px;
@@ -412,6 +407,19 @@ nav ul li a:hover {
     font-weight: 300;
 }
 
+#skills .row.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  
+  }
+  
+  #skills .single-skill {
+    flex-basis: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
   
 
 /*--------------------------------------*/
@@ -551,54 +559,18 @@ nav ul li a:hover {
     text-align: center;       
 }
 
-.work_content_area .item-img{
-	position: relative;
-	margin-bottom: 30px;
-	transition: all .4s;
-}
-
-.work_content_area .item-img:hover{
-	box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.work_content_area .item-img:hover .item-img-overlay{
-	visibility: visible;
-	opacity: 1;
-}
-
-.overlay-info{
-	margin-top: 50px;
-}
-
-.work_content_area .item-img-overlay{
-	position: absolute;
-	width: 200px;
-	height: 150px;
-	top: 0;
-	padding: 30px;
-	background: rgba(245, 84, 34, 0.6) none repeat scroll 0 0;
-	opacity: 0;
-	visibility: hidden;
-	transition: 2s;
-}
-
-.work_content_area .item-img-overlay .icon{
-	position: absolute;
-	right: 155px;
-	bottom: 120px;
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 50%;
-	text-align: center;
-	font-size: 20px;
-	color: #fff;
-}
-
-.work_content_area:hover a{
-	animation: fadeInDown 700ms ease-in-out;
-}
-
+#portfolio .row.work_content_area {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+  }
+  
+  #portfolio .item-img {
+    flex-basis: 30%; 
+    box-sizing: border-box;
+    margin-bottom: 100px;
+  }
+  
 /*--------------------------------------*/
 /*             Resume Section           */
 /*--------------------------------------*/
@@ -625,7 +597,7 @@ nav ul li a:hover {
     padding: 25px 25px 25px 25px;
 }
 
-.dark_bg .edu-list > li{
+.edu-list > li{
 	border: 1px solid #F95353;
 }
 
@@ -642,7 +614,7 @@ nav ul li a:hover {
     content: '';
     position: absolute;
     top: 40px;
-    left: -27px;
+    left: -35px;
     width: 3px;
     height: 100%;
     background: #F95353;
@@ -652,7 +624,7 @@ nav ul li a:hover {
 	content: "\f19d";
     position: absolute;
     top: 0;
-	left: -50px;
+	left: -58px;
 	width: 50px;
 	height: 50px;
     line-height: 50px;
@@ -673,7 +645,7 @@ nav ul li a:hover {
 	content: "\f0b1";
     position: absolute;
     top: 0;
-	left: -50px;
+	left: -58px;
 	width: 50px;
 	height: 50px;
     line-height: 50px;
@@ -690,7 +662,18 @@ nav ul li a:hover {
             transition: all .3s ease;
 }
 
-
+#resume .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  #resume .education-container {
+    flex-basis: 48%; /* Cada bloque ocupa el 48% del ancho */
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
 /*--------------------------------------*/
 /*            Contact Section           */
 /*--------------------------------------*/
